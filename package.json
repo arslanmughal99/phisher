@@ -1,0 +1,18 @@
+{
+  "name": "Phisher",
+  "version": "1.0.0",
+  "description": "a facebook phishing tool",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/arslanmughal5566/",
+  "homepage": "https://github.com/arslanmughal5566/",
+  "author": "Arslan",
+  "dependencies": {
+    "electron": "^3.0.8",
+    "jquery": "^3.3.1",
+    "ngrok": "^3.1.0",
+    "python-shell": "^1.0.6"
+  }
+}

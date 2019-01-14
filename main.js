@@ -52,7 +52,7 @@ ipcMain.on('start-stop', (e, message)=>{
 
   if(message){
     try {
-    shell = new PythonShell('../../../../../../../../../../root/Documents/Phisher_GUI/python_scripts/app.py', null);   // start python server
+    shell = new PythonShell('./python_scripts/app.py', null);   // start python server
   }catch(err) {
     e.sender.send('internal-server-error', true);
   }

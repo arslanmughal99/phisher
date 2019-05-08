@@ -11,7 +11,7 @@
   "author": "Arslan",
   "dependencies": {
     "electron": "^3.0.8",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "ngrok": "^3.1.0",
     "python-shell": "^1.0.6"
   }
